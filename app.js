@@ -1,6 +1,9 @@
 var createError = require('http-errors');
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://127.0.0.1:27017/pinterest-clone');
 var express = require('express');
 var path = require('path');
+
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
